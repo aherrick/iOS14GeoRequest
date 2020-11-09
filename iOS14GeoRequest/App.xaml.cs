@@ -1,6 +1,4 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 
 namespace iOS14GeoRequest
 {
@@ -10,7 +8,7 @@ namespace iOS14GeoRequest
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new RootTabPage());
         }
 
         protected override void OnStart()
